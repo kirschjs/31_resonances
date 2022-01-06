@@ -1,0 +1,176 @@
+\documentclass[aps,onecolumn,preprintnumbers,amsmath,amssymb,nofootinbib,superscriptaddress,notitlepage]{revtex4-1}
+
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[normalem]{ulem}
+%\usepackage{slashed}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bbold}
+\usepackage{amssymb,latexsym}
+\usepackage{amsmath,amsbsy,bbm}
+
+\newcommand{\reales}{{\rm R}\hspace{-1ex}\rule{0.1mm}{1.5ex}\hspace{1ex}}
+\def\tstrut{\vrule height2.5ex depth0pt width0pt} % used in tables
+\def\jtstrut{\vrule height5ex depth0pt width0pt} % used in tables
+
+
+\newcommand{\eftnopi}{\mbox{EFT$(\not \! \pi)$}}
+
+\definecolor{green}{HTML}{2E8B57}
+\interfootnotelinepenalty=10000 %% Completely prevent breaking of footnote
+
+\begin{document}
+
+
+%\title{Universally emergent L=1 resonances}
+\title{Four-body L=1 systems from contact EFT}
+
+\author{Johannes Kirscher}
+\address{Theoretical Physics Division, School of Physics and Astronomy,\\
+  The University of Manchester, Manchester, M13 9PL, UK}
+  
+\author{Martin Sch{\"a}fer}
+\address{Nuclear Physics Institute of the Czech Academy of Sciences, 25069 \v{R}e\v{z}, Czech Republic}
+  
+\author{Rimantas Lazauskas}
+\address{IPHC, IN2P3-CNRS/Universit\'e de Strasbourg BP 28, F-67037 Strasbourg Cedex 2, France}
+
+\author{Lorenzo Contessi}\email{lorenzo@contessi.net}
+\address{IRFU, CEA, Universit\'e Paris-Saclay, 91191 Gif-sur-Yvette, France}
+
+\author{Jaume Carbonel}
+\address{Universit\'e Paris-Saclay, CNRS/IN2P3, IJCLab, 91405 Orsay, France} 
+
+\date{\today}
+
+
+
+
+\begin{abstract} 
+Few-body scattering resonances appear in multiple physical fields and are commonly found in experiments. 
+Compared with boundstates, they are more difficult to be studied theoretically and numerically because of their belonging to the continuum phase-space.
+In this study we analyze the minimal theory that predict the appearance of $L=1$ four-body resonance.
+This state is known in nuclear physics to be related with the lighter nucleus that show resonant behaviour: $^4$H.
+However, we aim not only to study it in the nuclear framework, but also in more general universal systems.
+For this purpose we employ a contact effective field theory both fitted on nuclear observables (pionless effective field theory) and to unitary systems (universal effective field theory).
+This study will help to understand how resonances emerges in few- and many-body systems for nuclear physics and any other physical field close to universality.
+\end{abstract}
+
+
+
+\maketitle
+
+\section{Introduction}
+
+Resonance are ever present in quantum and classical physics.
+However, especially in many-particle quantum fields as hadronic, nuclear, and atomic physics, they are far from been trivial to be predicted and calculated. 
+A resonance in these fields is generally consequence of a nonperturbative and complex interplay of particle interactions that leads to the existence of multiple excitation and thresholds. 
+They are also, generally difficulty to be experimentally measured because of their broad size and their many-body nature. 
+Many models predict the existence of resonant states with better or worse success, however, just looking at the Hamiltonian of a system it is hard to foreseen the existence of such states.
+In this study we approach the existence of a resonant pole in the $^4$H nucleus using a minimal interaction: a renormalizable contact effective field theory at leading order.
+$^4$H is known to be the smallest nucleus that was measured to have a (relatively broad) resonance and it is the getaway to study the mechanism that creates resonances in nuclear systems and nuclear theories.
+
+In the last years effective field theories (EFT) have had a ever-increasing impact on nuclear and atomic physics. 
+They relay on the expansion of the appropriate underline theory onto a set of operators hierarchically arranged in a powercounting. 
+The origin of this expansion depends on the kind system in study and the interparicle typical momentum exchanged, and differentiate an EFT from another. 
+For example, it was shown that few-body nuclear systems are close to the unitary limit, in which the two-body scattering length is much larger than any other scale in such systems, allowing the description of few nucleons expanding the EFT around an infinite (or large) scattering length.
+This takes the name of pionless powercounting (\eftnopi) and, on contrary to the chiral EFT, in which pions origin long range forces, it is an expansion in contact operators.
+The absence of pions in \eftnopi limits this theory to be a low-momentum theory (i.e. can not describe phenomena which typical momentum would allow the creation of pions) but allows it to be fully renormalizable and relatively easy to be treated numerically and analytically.
+This makes it best suited to understand in simple terms even complex many-body phenomena and for the description of very shallow quantum states, like resonant poles. 
+
+To access the presence of a resonant state in $^4$H with a contact EFT we first, fix a \eftnopi on nuclear observables (fixing the nuclon mass, and the deuterium and triton bindings).
+The same theory was also fixed to nucler systems in which the two-body potential was tuned to the unitarity limit.
+This last case allows the access to the universal limit and to the deviation of the nuclear potential from it.
+We chose to use a SU(4) symmetric theory in both case for simplicity as this was proven to be a good first order representation of nuclear physics\cite{}. 
+
+
+
+In both the cases the theory has a contact nature, that results in the Thomas collapse, i.e. a diverging three-body energy as the theory approach the contact limit.
+To avoid this, and to fix the theory to a physical and finite three-body energy, a contact three-body repulsive interaction is promoted at the theory LO.
+In the physical case this vertex is fitted to reproduce the $^3$He energy and in the unitary case to fix a three-body binding $B_3=0.01$.
+In the unitary case the three-body counterterm represent the inclusion of a new scale in the problem (and the only one present), therefore, this inclusion breaks the scale invariance typical of universal theories into a discrete version of it with the consequent appearance of a tower of Efimov states in the three-body system.
+
+
+
+\section{Contact EFT and numerical methods}
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|ccc|}
+    \hline
+    \multicolumn{3}{|c|}{Nuclear LECs}\\
+    \hline
+         $\Lambda$ [fm$^{-1}$] & $C_0$ [MeV] & $D_0$ [MeV] \\
+1   &	-44.4552	&	27.2312 \\
+2	&   -142.376	&	172.703 \\
+3	&   -295.959	&	559.013 \\
+4	&   -505.202	&	1397.56 \\
+6	&   -1090.66	&	6311.30 \\
+10	&   -2929.48	&	89436.2 \\
+    \hline
+    \end{tabular}
+    \quad
+\begin{tabular}{|ccc|}
+    \hline
+    \multicolumn{3}{|c|}{Universal LECs}\\
+    \hline        
+        $\Lambda$  & $C_0$  & $D_0$  \\
+1	&   -0.671	&	0.678 \\
+2	&   -2.684	&	7.749 \\
+4	&   -10.736	&	194.253 \\
+6	&   -24.156	&	4273.294 \\
+8	&   -42.944	&	122391.358 \\
+10	&   -67.100	&	4102409.239 \\
+    \hline
+\end{tabular}
+    \caption{LECs fitted for each cut-off. In the left tab are listed the LECs fitted to reproduce deuterium and $^3$He energy in MeV. On the right the ones that reproduce unitary sistems of particles with $m=\hbar=c=1$.}
+    \label{tab:my_label}
+\end{table}
+
+The leading order (LO) of the theory is composed by a contact two-body and a contact three-body operators with two low energy constants (LECs) to be fitted on physical observables. 
+A Gaussian regulator and a cut-off $\Lambda$ are introduced to smear the contact potential such that the contact limit is achieved for $\Lambda\rightarrow+\infty$: 
+
+\begin{equation}
+    V(\textbf{r})=C_0 \sum_{i,j}^N e^{-\frac{r_{ij}^2\Lambda^2}{4}}
+\end{equation}
+
+\begin{equation}
+    W(\textbf{r})=D_0 \sum_{ijk}^N \left[
+    e^{-\frac{(r_{ij}^2+r_{ik}^2)\Lambda^2}{4}}+
+    e^{-\frac{(r_{ij}^2+r_{jk}^2)\Lambda^2}{4}}+
+    e^{-\frac{(r_{jk}^2+r_{ik}^2)\Lambda^2}{4}}\right]
+\end{equation}
+
+Once the interaction is regularized the LECs ($C_0$ and $D_0$) become cut-off dependent and should be fitted for any $\Lambda$ to reproduce the chosen set of fixed two- and three-body observables.
+Nonetheless, if the theory is renormalizable this is sufficient to stabilize any other few- and many-body observable in the \textbf{large cut-off limit} .
+Two set of LECs are reported in tab. \ref{tab:my_label}, one for the nuclear and one for the unitary case.
+The nuclear LECs are fitted to reproduce a single two-body boundstate of $B_2=2.22$ MeV (both in singlet and triplet channels).
+The three body is fitted to reproduce a single three-body state $B_3=-8.482$ MeV with a nucleon mass is fixed to $m=938.858$ MeV with $\hbar c= 197.31613$.
+The universality LECs are fitted to reproduce a large two body scattering length ($a_2>10^5$) and a single three body state $B_3=0.01$ with a particle mass fixed to be $m=1$ and $\hbar=c=1$.
+The fitting procedure has been done solving the two-body Shr\"odinger equation with the Numerov method and the three-body using the stochastic variational method briefly described below.
+
+\subsection{Numerical methods}
+RGM - SVM - ACCC - ?
+
+
+
+
+
+
+\section{Goals and results}
+
+The final goal of the project is the calculation of $^4$H and the respective unitary fermion system (AABC) $L=1$ resonant poles.
+However, a set of benchmark can be done in smaller systems to crosscheck the different numerical methods.
+Examples of such observables are the dimer-dimer scattering length (a(nn-nn) in nuclear physics) expected to be 0.6 time the two body scattering length in the unitary case, four distinguishable particles bounstate ($^4$He energy) expected to be 4.6 $E_3$ in the unitary case, and the particle-trimer scattering length (a(n-$^3$He)) with zero angular momentum.
+Given the variety of methods that we employ I suggest to start from the nuclear case (to have a experimental crosscheck) and then to move to the unitary case once we are relatively sure the numeric is under control. 
+Notice that the $^4$He energy is expected to be understimated (may be around $B_4\sim 20$MeV) by the theory since we are using the SU(4) symmetry fixing the deuterium boundstate. 
+a(n-$^3$He) is a good benchmark for RGM and Rimas's method but not very convenient for SVM. In that case it may be useful to set a four-body potential attractive enough to bind $^4$H for a finite cut-off (e.g. 2 fm$^{-1}$) and to check consistency of the methods.
+
+
+
+
+
+\end{document}
