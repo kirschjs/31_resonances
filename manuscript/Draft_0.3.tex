@@ -3,7 +3,6 @@
 \usepackage{graphicx} 
 \usepackage{dashrule}
 \usepackage{dcolumn} 
-\usepackage{longtable} 
 \usepackage{mathtools}
 \usepackage{amssymb} 
 \usepackage{bbold}
@@ -17,16 +16,20 @@
 \usepackage{paracol}
 \usepackage{nicefrac}
 \usepackage{MnSymbol}
+\usepackage{caption}
 
 \newcommand{\reales}{{\rm R}\hspace{-1ex}\rule{0.1mm}{1.5ex}\hspace{1ex}}
 \def\tstrut{\vrule height2.5ex depth0pt width0pt} % used in tables
 \def\jtstrut{\vrule height5ex depth0pt width0pt} % used in tables
 
+\newcommand{\figref}[1]{fig.~(\ref{#1})}
+\newcommand{\tabref}[1]{table~(\ref{#1})}
+\newcommand{\eref}[1]{eq.~(\ref{#1})}
 \newcommand{\eg}{\textit{e.g.}~}
 \newcommand{\ie}{\textit{i.e.}~}
 \newcommand{\viz}{\textit{viz.}~}
 \newcommand{\cf}{\textit{cf.}~}
-\newcommand{\eftnopi}{\mbox{EFT$(\not \! \pi)$}}
+\newcommand{\eftnopi}{\mbox{EFT($\slashed{\pi}$) }} 
 \newcommand{\ve}[1]{\ensuremath{\boldsymbol{#1}}}
 \newcommand{\rcm}{\ensuremath{\ve{R}_\text{\scriptsize{c.m.}}}}
 \newcommand*{\mprime}{^{\prime}\mkern-1.2mu}
@@ -35,6 +38,13 @@
 \newcommand{\ddrei}[1]{\delta_{\tiny \lambda}^{(3)}\!\big(#1\big)}
 \newcommand{\cc}{\ensuremath C(\lambda)}
 \newcommand{\dd}{\ensuremath D(\lambda)}
+\newcommand{\hbstwom}{\ensuremath \frac{\hbar^2}{2\mu}}
+\newcommand{\twomhbs}{\ensuremath \frac{2\mu}{\hbar^2}}
+\newcommand{\coup}[3]{\left[\,#1\,\otimes\,#2\,\right]^{#3}}
+\newcommand{\threej}[6]{ \begin{pmatrix}
+   #1 & #2 & #3 \\
+   #4 & #5 & #6 
+  \end{pmatrix}}
 
 \newcommand{\bra}[1] {\left\langle~#1~\right|}
 \newcommand{\ket}[1] {\left|~#1~\right\rangle}
@@ -510,7 +520,7 @@ without specific distortion:
 \qquad.
 \end{equation}
 
-\cf\eqref{eq.app.rgmwfkt}, first term. The parameter representation employed with the second equality in \eqref{eq.app.rgmwfkt2}
+\cf\eref{eq.app.rgmwfkt}, first term. The parameter representation employed with the second equality in \eref{eq.app.rgmwfkt2}
 will yield a defining equation for the relative motion independent of the antisymmetrizer $\mathcal{A}$.
 Assuming an inert triton core allows solely for a variation of the relative wave function:
 
@@ -546,15 +556,159 @@ Being more explicit, the motion of the two fragments relative to each other is a
 \qquad.
 \end{equation}
 
-Employing the parameter representation, $\chi(\ve{R})=\int\delta(\ve{R}-\ve{R}\mprime)\chi{\ve{R}\mprime}d\ve{R}\mprime$,
-and expanding the triton ground state in Gaussians,
-$\phi(3)=\sum_n^{N_f}\,c_n\cdot e^{-\alpha_n\sum_{i=1}^{N_A}\left(\ve{r}_i-\ve{R}_3\right)^2}$,
-in combination with the leading-order \eftnopi~potential
+This expression is further evaluated by:
+(i)~employing the parameter representation, $\chi(\ve{R})=\int\delta(\ve{R}-\ve{R}\mprime)\chi(\ve{R}\mprime)d\ve{R}\mprime$;
+(ii)~expanding the triton ground state in Gaussians,
+$\phi(3)=\sum_n^{N_f}\,c_n\cdot e^{-\alpha_n\sum_{i=1}^3\left(\ve{r}_i-\ve{R}_3\right)^2}$ with norm
+$\mathbb{N}_3=\sum_{i,j=1}^{N_f}c_ic_j\left(\frac{\pi}{\alpha_i+\alpha_j}\right)^{\nicefrac{3}{2}}$;
+(iii)~substituting the leading-order \eftnopi~potential as inter-cluster interaction,
 
-\begin{equation}\label{eq.app.pot}
-\mathcal{V}_{31}=\cc\,\sum_{i\in A\atop j\in B}\,\ddrei{\ve{r}_i-\ve{r}_j}+
+\begin{eqnarray}\label{eq.app.pot}
+\mathcal{V}_{31}
+&=&
+\cc\,\sum_{i\in A\atop j\in B}\,\ddrei{\ve{r}_i-\ve{r}_j}+
 \dd\,\sum_{i,j,k\atop i\in A\Rightarrow j\vee k\in B}\ddrei{\ve{r}_i-\ve{r}_j}\,\ddrei{\ve{r}_i-\ve{r}_k}
+\nonumber\\
+&=&
+\cc\cdot\left(\ddrei{\ve{r}_2-\ve{r}_4}+\ddrei{\ve{r}_3-\ve{r}_4}\right)
++\dd\cdot\left(\ddrei{\ve{r}_2-\ve{r}_3}\,\ddrei{\ve{r}_2-\ve{r}_4}\right)
+\qquad;
+\end{eqnarray}
+
+(iv)~performing the action of $\mathcal{A}_{31}$ on $\phi_3$ and $\delta(\ve{R}-\ve{R}\mprime)$;
+and finally, (v)~doing the Gaussian integrals for the triton-internal single-particle coordinates $\ve{r}_{1,2,3}$.
+Thereby, one obtains the form
+
+\begin{equation}\label{eq.app.rgmform}
+(\hat{T}-E)~\chi(\ve{R})+\mathcal{V}^{(1)}(\ve{R})~\chi(\ve{R})+
+\int d^{(3)}\ve{R}\mprime~\mathcal{V}^{(2)}(\ve{R},\ve{R}\mprime,E)~\chi(\ve{R}\mprime)=0
+\qquad.
 \end{equation}
+
+More conveniently, we do express this equation as
+
+\begin{gather}\label{eq.app.rgm.sglnonloc}
+\mathbb{N}_3\cdot\left(-\ve{\Delta}_R-\ve{p}^2\right)\,\chi(\ve{R})+
+\sum_{i,j=1}^{N_f}c_ic_j\left[
+\sum_{n=1}^{2}\eta^{(ij)}_n~e^{-w^{(ij)}_n\ve{R}^2}\chi(\ve{R})-
+\sum_{n=1}^{3}\int\left\lbrace\zeta^{(ij)}_n\hat{\zeta}_n\,e^{-a^{(ij)}_n\ve{R}^2-b^{(ij)}_n\ve{R}\cdot\ve{R}'-c^{(ij)}_n\ve{R}'^2}\right\rbrace\chi(\ve{R}') d\ve{R}'
+\right]
+=0
+\\
+\intertext{with $\hat{\eta}_n,\hat{\zeta}_n,w_n,a_n,b_n,c_n$ dependent upon,
+(i) the low-energy constants: $\cc,\dd$, (ii) the triton-expansion parameters: $\alpha_n, c_n$,
+(iii) the regulator parameter: $\lambda$, and (iv) the relative momentum: $\ve{p}^2=2\mu E$, as given in \tabref{tab.app.pot.coffs}.\nonumber} 
+\end{gather}
+
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.6}
+\begin{table}
+\begin{tabular}{l|c|c|c|c}
+$n$ & $\eta^{(ij)}$  & $w^{(ij)}$ & & \\\hline
+1   & $\frac{2\cc}{\left[2(\alpha_i+\alpha_j)(3\alpha_i+3\alpha_j+2\lambda)\right]^{\nicefrac{3}{2}}}$ & 
+      $\frac{3(\alpha_i+\alpha_j)\lambda}{3(\alpha_i+\alpha_j)+2\lambda}$ &  &  \\
+2   & $\frac{\dd}{\left[6(\alpha_i+\alpha_j)^2+16\lambda(\alpha_i+\alpha_j)+2\lambda^2\right]^{\nicefrac{3}{2}}}$ & 
+      $\frac{3(\alpha_i+\alpha_j)\lambda((\alpha_i+\alpha_j)+2\lambda)}{3(\alpha_i+\alpha_j)^2+8(\alpha_i+\alpha_j)\lambda+\lambda^2}$ &  &  \\
+\hline\hline
+           & $\zeta^{(ij)}\otimes\hat{\zeta}$ & $a^{(ij)}$ & $b^{(ij)}$ & $c^{(ij)}$ \\\hline
+1   & $\hbstwom\frac{3^3}{2^6}~\frac{1}{\left[2(\alpha_i+\alpha_j)\right]^{\nicefrac{3}{2}}}\otimes\left(-\ve{\Delta}_R-\ve{p}^2\right)$ &
+      $\frac{3}{32}(\alpha_i+9\alpha_j)$ & 
+      $\frac{9}{16}(\alpha_i+\alpha_j)$ & 
+      $\frac{3}{32}(9\alpha_i+\alpha_j)$ \\
+2   & $-\frac{3^3}{2^5}~\frac{\cc}{\left[2(\alpha_i+\alpha_j)+\lambda\right]^{\nicefrac{3}{2}}}\otimes\mathbb{1}$ & 
+      $\frac{3(\alpha_i^2+9\alpha_j^2+10\alpha_i\alpha_j+\lambda(14\alpha_i+18\alpha_j))}{16(2(\alpha_i+\alpha_j)+\lambda)}$ & 
+      $\frac{18(\alpha_i+\alpha_j)(\alpha_i+\alpha_j)+2\lambda}{16(2(\alpha_i+\alpha_j)+\lambda)}$ & 
+      $\frac{3(9\alpha_i^2+\alpha_j^2+10\alpha_i\alpha_j+\lambda(6\alpha_i+2\alpha_j))}{16(2(\alpha_i+\alpha_j)+\lambda)}$  \\
+3   & $-\frac{3^3}{2^6}~\frac{\dd}{\left[2(\alpha_i+\alpha_j)+5\lambda\right]^{\nicefrac{3}{2}}}\otimes\mathbb{1}$ & 
+      $\frac{3(\alpha_i^2+9\alpha_j^2+10\alpha_i\alpha_j+\lambda(16\alpha_i+36\alpha_j)+27\lambda^2)}{16(2(\alpha_i+\alpha_j)+5\lambda)}$ & 
+      $\frac{18((\alpha_i+\alpha_j)^2+4\lambda(\alpha_i+\alpha_j)+3\lambda^2)}{16(2(\alpha_i+\alpha_j)+5\lambda)}$ & 
+      $\frac{3(9\alpha_i^2+\alpha_j^2+10\alpha_i\alpha_j+\lambda(24\alpha_i+4\alpha_j)+3\lambda^2)}{16(2(\alpha_i+\alpha_j)+5\lambda)}$  \\
+\hline\hline
+\end{tabular}
+\caption{\small{Local ($\eta,w$) and non-local ($\zeta,a,b,c$) components of the resonating-group \eref{eq.app.rgm.sglnonloc}.}}
+\label{tab.app.pot.coffs}
+\end{table}
+
+The character of the interaction is expected to depend strongly on the spatial symmetry of the wave function, and as
+the parities of the triton core and the point neutron are positive, the overall parity is set by the relative motion
+$\chi$. In order to investigate the parity dependence, we project into partial waves:
+Expanding $\chi(\ve{R})=R^{-1}\sum_{lm}\phi_{lm}(R)Y_{lm}(\hat{\ve{R}})$
+and projecting from the left with
+$R\,\int d^2\hat{\ve{R}}~Y^*_{lm}(\hat{\ve{R}})$
+before substituting
+$$
+e^{-b\ve{R}\cdot\ve{R}'}=4\pi\sum_{LM}i^Lj_L(ib RR')Y^*_{LM}(\hat{\ve{R}})Y_{LM}(\hat{\ve{R}}')\;\;;\;\;
+\ve{R}\cdot\ve{R}'=-\sqrt{3}\coup{\ve{R}_p}{\ve{R}\mprime_{-p}}{00}=\frac{4\pi}{3}RR'\sum_p(-)^p\,Y_{1p}Y'_{1-p}
+$$
+and $\ve{r}_m=\sqrt{\frac{4\pi}{3}}rY_{1,m}(\hat{\ve{r}})$
+yields
+\begin{align}
+0~=&
+~\mathbb{N}_3\cdot\left(\partial^2_R-\frac{l(l+1)}{R^2}+\ve{p}^2\right)
+\phi_{lm}(R)
+-
+\twomhbs\sum_{i,j=1}^{N_f}c_ic_j\Bigg(
+\sum_{n=1}^2\eta^{(ij)}_n~e^{-w^{(ij)}_nR^2}\phi_{lm}(R)\nonumber\\
+%
+&-\int dR\mprime~\phi_{lm}(R\mprime)~(4\pi RR\mprime )~\Bigg[
+%
+~\zeta^{(ij)}_1 \cdot e^{-a^{(ij)}_1R^2-c^{(ij)}_1R'^2}\cdot\Bigg\lbrace
+\left[-(4(a^{(ij)}_1)^2R^2+(b^{(ij)}_1)^2R\mprime^2-2a^{(ij)}_1)+\frac{l(l+1)}{R^2}-\frac{2\mu}{\hbar^2}E\right]
+ i^l j_{l}(ib^{(ij)}_1 RR')\nonumber\\
+%
+&-(4a^{(ij)}_1b^{(ij)}_1)\cdot RR\mprime\cdot
+\sum_Li^Lj_L(ib^{(ij)}_1 RR')~\hat{L}~\hat{l}~\threej{L}{1}{l}{0}{0}{0}^2~\triangle_{L1l}\Bigg\rbrace
+%
++\sum_{n=2}^3\zeta^{(ij)}_n\,i^l j_l(ib_n RR')\cdot 
+e^{-a^{(ij)}_nR^2-c^{(ij)}_nR'^2}~\Bigg]\Bigg)\label{eq.app.sglnonloc.pw.l.noloc}
+\end{align}
+with a 3-$j$ symbol $\neq0\Leftrightarrow L+1+l=$~even, and $\triangle_{j_1j_2j_3}\neq0\Leftrightarrow j_3=|j_1-j_2|,\ldots,j_1+j_2$.
+From this equation, we obtain solutions for $S$- and $P$-waves on a discrete, equidistant coordinate grid:
+$R,R\mprime\in\lbrace r_0,r_0+\epsilon,r_0+2\epsilon,\ldots,,\underbrace{r_0+N_\text{\tiny grid}\epsilon}_{=:r_{N_\text{\tiny grid}+1}}\rbrace$.
+We chose a maximal grid dimension such that for $R(\mprime)=r_{N_\text{\tiny grid}+1}$ both local and non-local interactions
+vanish. Thence, we solve \eref{eq.app.sglnonloc.pw.l.noloc} for the {\it principal-value} wave function ($\phi^{(P)}$)
+with the boundary condition
+
+\begin{eqnarray}\label{eq.app.principal.value.wfkt}
+\phi_{l,p}^{(P)}(R)
+&
+\stackrel{R\to\infty}{\simeq}
+&
+\sin\left(pR-\frac{\pi l}{2}\right)
++
+K_l
+\cdot
+\cos\left(pR-\frac{\pi l}{2}\right)\\
+&
+=
+&
+\lim_{pR\to\infty}\left[u_l(pR)\right]
++
+\tan\delta_l
+\cdot
+\lim_{pR\to\infty}\left[v_l(pR)\right]
+=
+\left\lbrace
+\begin{array}{ll}
+l=0:& \sin\left(pR\right)-\tan\delta_l\cos\left(pR\right)\\
+l=1:& \frac{\sin\left(pR\right)}{pR}-\cos\left(pR\right)-\tan\delta_l\left[\frac{\cos\left(pR\right)}{pR}+\sin\left(pR\right)\right]
+\end{array}
+\right.
+\;\;.
+\quad
+\end{eqnarray}
+
+For the Riccati-Bessel, $u_l(z)=zj_l(z)$, and the Riccati-Neumann Functions, $v_l(z)=zn_l(z)$, we use
+\cite{}~as reference, where $j_l(n_l)$ is the proper spherical Bessel(Neumann) function. Note, the relation
+between the Neumann and the spherical Bessel function of the second kind: $n_l(z)=(-)^ly_l(z)$.
+Now, we obtain the phase shifts from
+
+\begin{equation}\label{eq.app.phases}
+\tan\delta_l=\frac{\phi_{l,p}^{(P)}(r_{N_\text{\tiny grid}+1})}{v_l(pr_{N_\text{\tiny grid}+1})}-
+\frac{u_l(pr_{N_\text{\tiny grid}+1})}{v_l(pr_{N_\text{\tiny grid}+1})}
+\qquad.
+\end{equation}
+
 
 \begin{figure}
 \centering
@@ -562,8 +716,28 @@ in combination with the leading-order \eftnopi~potential
 \caption{Two-fragment potential as a function of the distance between a
 neutron and the center of mass of a triton. The plot shows the $P$-wave component of the
 interaction including local and non-local part of the kinetic-, pair-, and three-body interactions.
-The non-local parts are evaluated at $\rho=\rho'$}
+The non-local parts are evaluated at $R=R'$. The height of the potential's barrier shrinks continuously from
+the smallest cutoff (fat blue) to the largest (red), with intermediate values represented by green, dashed curves.}
 \label{fig:rgm_potential}
 \end{figure}
+
+\begin{figure*}[th]
+\captionsetup{width=.4\linewidth,justification=raggedright}
+\begin{tabular}{cc}
+\begin{minipage}[t]{0.45\linewidth}
+ \includegraphics[width=\textwidth]{./Graphs/rgm_potential_MinMax}
+ \caption{Locus of the valley (red, dashed) and the barrier (blue, solid) of the effective resonating-group
+ interaction (\figref{fig:rgm_potential}) as a function of the regulator parameter $\lambda$.}
+\label{fig:rgm_pot_minmax}
+\end{minipage}
+&
+\begin{minipage}[t]{0.45\linewidth}
+ \includegraphics[width=\textwidth]{./Graphs/rgm_potential_DeltaMinMax}
+\caption{Regulator dependence of the difference between the first local maximum of the effective resonating-group potential
+(\figref{fig:rgm_potential}) and its first local minimum.}
+\label{fig:rgm_pot_valbardiff}
+\end{minipage}
+\end{tabular}
+\end{figure*}
 
 \end{document}

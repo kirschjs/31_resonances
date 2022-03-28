@@ -6,8 +6,8 @@ set output "tmp.tex"
 
 set yrange [0:120]
 set xrange [0:4]
-set xlabel "$\\rho$ [fm]"
-set ylabel "$V_{\\rho=\\rho'}$ [MeV]"
+set xlabel "$R$ [fm]"
+set ylabel "$V_{R=R'}$ [MeV]"
 
 #set key box width .5 height 1. spacing 1.8 b r
 set key spacing 1.4
@@ -17,7 +17,7 @@ set style line 1 lc rgb '#21618C' lw 4.5 ps 1.5 pt 7
 set style line 2 lc rgb '#A93226' lw 2.5 ps 2.0 pt 7
 set style line 3 lc rgb '#186A3B' dt (4,4,4,4) lw 1.5 ps 2.5 pt 7
 
-#set ytics 0,-20,-100  format "$%g$" nomirror
+set ytics 0,20,120  format "$%g$" nomirror
 #set xtics 0,0.5,2    format "$%g$" nomirror
 #set format x '$%g$'
 

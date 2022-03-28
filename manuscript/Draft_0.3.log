@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.9)  26 MAR 2022 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.9)  28 MAR 2022 10:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -223,39 +223,21 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \backup@length=\skip56
 \ar@cellbox=\box65
 ))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip57
-\LTright=\skip58
-\LTpre=\skip59
-\LTpost=\skip60
-\LTchunksize=\count272
-\LTcapwidth=\dimen151
-\LT@head=\box66
-\LT@firsthead=\box67
-\LT@foot=\box68
-\LT@lastfoot=\box69
-\LT@cols=\count273
-\LT@rows=\count274
-\c@LT@tables=\count275
-\c@LT@chunks=\count276
-\LT@p@ftn=\toks25
-)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count277
-\calc@Bcount=\count278
-\calc@Adimen=\dimen152
-\calc@Bdimen=\dimen153
-\calc@Askip=\skip61
-\calc@Bskip=\skip62
+\calc@Acount=\count272
+\calc@Bcount=\count273
+\calc@Adimen=\dimen151
+\calc@Bdimen=\dimen152
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count279
-\calc@Cskip=\skip63
+\calc@Ccount=\count274
+\calc@Cskip=\skip59
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -264,17 +246,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count280
-\l_MT_multwidth_dim=\dimen154
-\origjot=\skip64
-\l_MT_shortvdotswithinadjustabove_dim=\dimen155
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen156
-\l_MT_above_intertext_sep=\dimen157
-\l_MT_below_intertext_sep=\dimen158
-\l_MT_above_shortintertext_sep=\dimen159
-\l_MT_below_shortintertext_sep=\dimen160
-\xmathstrut@box=\box70
-\xmathstrut@dim=\dimen161
+\g_MT_multlinerow_int=\count275
+\l_MT_multwidth_dim=\dimen153
+\origjot=\skip60
+\l_MT_shortvdotswithinadjustabove_dim=\dimen154
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen155
+\l_MT_above_intertext_sep=\dimen156
+\l_MT_below_intertext_sep=\dimen157
+\l_MT_above_shortintertext_sep=\dimen158
+\l_MT_below_shortintertext_sep=\dimen159
+\xmathstrut@box=\box66
+\xmathstrut@dim=\dimen160
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/bbold/bbold.sty
 Package: bbold 1994/04/06 Bbold symbol package
@@ -311,15 +293,15 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks26
-\SOUL@lasttoken=\toks27
-\SOUL@cmds=\toks28
-\SOUL@buffer=\toks29
-\SOUL@token=\toks30
-\SOUL@spaceskip=\skip65
-\SOUL@ttwidth=\dimen162
-\SOUL@uldp=\dimen163
-\SOUL@ulht=\dimen164
+\SOUL@word=\toks25
+\SOUL@lasttoken=\toks26
+\SOUL@cmds=\toks27
+\SOUL@buffer=\toks28
+\SOUL@token=\toks29
+\SOUL@spaceskip=\skip61
+\SOUL@ttwidth=\dimen161
+\SOUL@uldp=\dimen162
+\SOUL@ulht=\dimen163
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
@@ -327,45 +309,45 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count281
-\rotFPtop=\skip66
-\rotFPbot=\skip67
-\rot@float@box=\box71
-\rot@mess@toks=\toks31
+\c@r@tfl@t=\count276
+\rotFPtop=\skip62
+\rotFPbot=\skip63
+\rot@float@box=\box67
+\rot@mess@toks=\toks30
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/paracol/paracol.sty
 Package: paracol 2018/12/31 v1.35 
-\pcol@currcol=\count282
-\pcol@nextcol=\count283
-\pcol@ncol=\count284
-\pcol@ncolleft=\count285
-\pcol@page=\count286
-\pcol@basepage=\count287
-\pcol@toppage=\count288
-\pcol@footnotebase=\count289
-\pcol@nfootnotes=\count290
-\pcol@mcid=\count291
-\pcol@prevdepth=\dimen165
-\pcol@colht=\dimen166
-\pcol@textfloatsep=\dimen167
-\pcol@lrmargin=\dimen168
-\pagerim=\dimen169
-\pcol@topskip=\skip68
-\belowfootnoteskip=\skip69
-\pcol@topfnotes=\box72
-\pcol@prespan=\box73
-\pcol@rightpage=\box74
-\pcol@colorstack@saved=\box75
-\pcol@tempboxa=\box76
-\pcol@tempboxb=\box77
+\pcol@currcol=\count277
+\pcol@nextcol=\count278
+\pcol@ncol=\count279
+\pcol@ncolleft=\count280
+\pcol@page=\count281
+\pcol@basepage=\count282
+\pcol@toppage=\count283
+\pcol@footnotebase=\count284
+\pcol@nfootnotes=\count285
+\pcol@mcid=\count286
+\pcol@prevdepth=\dimen164
+\pcol@colht=\dimen165
+\pcol@textfloatsep=\dimen166
+\pcol@lrmargin=\dimen167
+\pagerim=\dimen168
+\pcol@topskip=\skip64
+\belowfootnoteskip=\skip65
+\pcol@topfnotes=\box68
+\pcol@prespan=\box69
+\pcol@rightpage=\box70
+\pcol@colorstack@saved=\box71
+\pcol@tempboxa=\box72
+\pcol@tempboxb=\box73
 \pcol@colorins=\insert252
-\pcol@everyvbox=\toks32
+\pcol@everyvbox=\toks31
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip70
-\L@UnitsRaiseTextstyle=\skip71
-\L@UnitsRaiseScriptstyle=\skip72
+\L@UnitsRaiseDisplaystyle=\skip66
+\L@UnitsRaiseTextstyle=\skip67
+\L@UnitsRaiseScriptstyle=\skip68
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
 Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
@@ -448,20 +430,46 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 )
-Class revtex4-1 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 50.
-Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with
- fingers crossed) on input line 50.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 50.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 50.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 50.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count292
-\l__pdf_internal_box=\box78
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen169
+\captionmargin@=\dimen170
+\captionwidth=\dimen171
+\caption@tempdima=\dimen172
+\caption@indent=\dimen173
+\caption@parindent=\dimen174
+\caption@hangindent=\dimen175
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\par \vskip \abovecapti
+onskip \begingroup \small \rmfamily \sbox \@tempboxa {\let \\\heading@cr \@make
+@capt@title {#1}{#2}}\@ifdim {\wd \@tempboxa >\hsize }{\begingroup \samepage \f
+lushing \let \footnote \@footnotemark@gobble \@make@capt@title {#1}{#2}\par \en
+dgroup }{\global \@minipagefalse \hb@xt@ \hsize {\hfil \unhbox \@tempboxa \hfil
+ }}\endgroup \vskip \belowcaptionskip  on input line 1139.
 )
-(./Draft_0.3.aux
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count287
+\c@continuedfloat=\count288
+Package caption Info: rotating package is loaded.
+)
+Class revtex4-1 Info: Unrecognized array package. Please update this document c
+lass! (Proceeding with fingers crossed.) on input line 60.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 60.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 60.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 60.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count289
+\l__pdf_internal_box=\box74
+) (./Draft_0.3.aux
 
 LaTeX Warning: Label `fig:Resonance_pole' multiply defined.
 
@@ -477,33 +485,33 @@ LaTeX Warning: Label `eq.rgm.eqom' multiply defined.
 )
 \openout1 = `Draft_0.3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
-\scratchdimen=\dimen170
-\scratchbox=\box79
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count296
-\MPscratchDim=\dimen171
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count290
+\scratchdimen=\dimen176
+\scratchbox=\box75
+\nofMPsegments=\count291
+\nofMParguments=\count292
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count293
+\MPscratchDim=\dimen177
+\MPnumerator=\count294
+\makeMPintoPDFobject=\count295
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -513,21 +521,23 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 \openout3 = `Draft_0.3Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 78
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 88
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
@@ -535,135 +545,195 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 
 Package natbib Warning: Citation `osti_4230875' on page 1 undefined on input li
-ne 127.
+ne 137.
 
 
 Package natbib Warning: Citation `Phillips:1980zz' on page 1 undefined on input
- line 127.
+ line 137.
 
 
 Package natbib Warning: Citation `Tilley:1992zz' on page 1 undefined on input l
-ine 127.
+ine 137.
 
 
 Package natbib Warning: Citation `Ciesielski:1997vy' on page 1 undefined on inp
-ut line 128.
+ut line 138.
 
 
 Package natbib Warning: Citation `Ciesielski:1998sy' on page 1 undefined on inp
-ut line 128.
+ut line 138.
 
 
 Package natbib Warning: Citation `Ciesielski:1999pp' on page 1 undefined on inp
-ut line 128.
+ut line 138.
 
 
 Package natbib Warning: Citation `Viviani:1998gr' on page 1 undefined on input 
-line 128.
+line 138.
 
 
 Package natbib Warning: Citation `Fonseca:1999zz' on page 1 undefined on input 
-line 128.
+line 138.
 
 
 Package natbib Warning: Citation `Lazauskas:2004uq' on page 1 undefined on inpu
-t line 128.
+t line 138.
 
 
 Package natbib Warning: Citation `Arai:2003ek' on page 1 undefined on input lin
-e 130.
+e 140.
 
 
 Package natbib Warning: Citation `deDiego:2007rd' on page 1 undefined on input 
-line 130.
+line 140.
 
 
 Package natbib Warning: Citation `Lazauskas:2019cxj' on page 1 undefined on inp
-ut line 130.
+ut line 140.
 
 
 Package natbib Warning: Citation `Tilley:1992zz' on page 1 undefined on input l
-ine 133.
+ine 143.
 
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `vanKolck:1999mw' on page 2 undefined on input
- line 173.
+ line 183.
 
 
 Package natbib Warning: Citation `Schafer:2020ivj' on page 2 undefined on input
- line 186.
+ line 196.
 
 
 Package natbib Warning: Citation `Contessi:2017rww' on page 2 undefined on inpu
-t line 186.
+t line 196.
 
 
 Package natbib Warning: Citation `Schafer:2020rba' on page 2 undefined on input
- line 197.
+ line 207.
 
 
 Package natbib Warning: Citation `vanKolck:1999mw' on page 2 undefined on input
- line 255.
+ line 265.
 
 [2]
 <./Graphs/a0a1.png, id=30, 1062.97125pt x 657.45625pt>
 File: ./Graphs/a0a1.png Graphic file (type png)
 <use ./Graphs/a0a1.png>
-Package pdftex.def Info: ./Graphs/a0a1.png  used on input line 341.
+Package pdftex.def Info: ./Graphs/a0a1.png  used on input line 351.
 (pdftex.def)             Requested size: 484.49844pt x 299.67476pt.
  [3]
 <./Graphs/E4H.png, id=41, 817.0525pt x 504.88625pt>
 File: ./Graphs/E4H.png Graphic file (type png)
 <use ./Graphs/E4H.png>
-Package pdftex.def Info: ./Graphs/E4H.png  used on input line 381.
+Package pdftex.def Info: ./Graphs/E4H.png  used on input line 391.
 (pdftex.def)             Requested size: 484.49844pt x 299.39026pt.
  [4 <./Graphs/a0a1.png>]
 <./Graphs/unitarityA.png, id=46, 681.54625pt x 424.58624pt>
 File: ./Graphs/unitarityA.png Graphic file (type png)
 <use ./Graphs/unitarityA.png>
-Package pdftex.def Info: ./Graphs/unitarityA.png  used on input line 415.
+Package pdftex.def Info: ./Graphs/unitarityA.png  used on input line 425.
 (pdftex.def)             Requested size: 484.49844pt x 301.8341pt.
 
 No file Draft_0.3.bbl.
 [5 <./Graphs/E4H.png>]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 460.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 460.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
 
 [6 <./Graphs/unitarityA.png>]
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 5
-37.
+47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd)
+Overfull \hbox (9.2048pt too wide) in paragraph at lines 559--565
+\OT1/cmr/m/n/10 (ii) ex-pand-ing the tri-ton ground state in Gaus-sians, $\OML/
+cmm/m/it/10 ^^^\OMX/MnSymbolE/m/n/10 à\OT1/cmr/m/n/10 3\OMX/MnSymbolE/m/n/10 ç 
+\U/MnSymbolD/m/n/10 ^^@ [][]  \OML/cmm/m/it/10 c[] \U/MnSymbolC/m/n/10 ^^@ \OML
+/cmm/m/it/10 e[]$ \OT1/cmr/m/n/10 with norm $\U/bbold/m/n/10 N[] \U/MnSymbolD/m
+/n/10 ^^@ [][] \OML/cmm/m/it/10 c[]c[] [][]$\OT1/cmr/m/n/10 ;
+ []
+
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 555.
+(amsmath)                 on input line 569.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 555.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 569.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 556.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 570.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 556.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 570.
 
 
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 573.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 573.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 574.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 574.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 614.
+
+
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 614.
+
+
+Overfull \hbox (32.53168pt too wide) in paragraph at lines 606--628
+ []$[]$ 
+ []
+
+
+Overfull \hbox (45.00638pt too wide) detected at line 664
+[]
+ []
+
+[7]
 
 pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./Graph
 s/rgm_potential.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<./Graphs/rgm_potential.pdf, id=58, 361.35pt x 252.945pt>
+<./Graphs/rgm_potential.pdf, id=68, 361.35pt x 252.945pt>
 File: ./Graphs/rgm_potential.pdf Graphic file (type pdf)
 <use ./Graphs/rgm_potential.pdf>
-Package pdftex.def Info: ./Graphs/rgm_potential.pdf  used on input line 561.
+Package pdftex.def Info: ./Graphs/rgm_potential.pdf  used on input line 715.
 (pdftex.def)             Requested size: 484.49844pt x 339.15295pt.
+
+
+pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./Graph
+s/rgm_potential_MinMax.pdf): PDF inclusion: found PDF version <1.7>, but at mos
+t version <1.5> allowed
+<./Graphs/rgm_potential_MinMax.pdf, id=69, 361.35pt x 252.945pt>
+File: ./Graphs/rgm_potential_MinMax.pdf Graphic file (type pdf)
+<use ./Graphs/rgm_potential_MinMax.pdf>
+Package pdftex.def Info: ./Graphs/rgm_potential_MinMax.pdf  used on input line 
+728.
+(pdftex.def)             Requested size: 229.49844pt x 160.64917pt.
+
+
+pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./Graph
+s/rgm_potential_DeltaMinMax.pdf): PDF inclusion: found PDF version <1.7>, but a
+t most version <1.5> allowed
+<./Graphs/rgm_potential_DeltaMinMax.pdf, id=70, 361.35pt x 252.945pt>
+File: ./Graphs/rgm_potential_DeltaMinMax.pdf Graphic file (type pdf)
+<use ./Graphs/rgm_potential_DeltaMinMax.pdf>
+Package pdftex.def Info: ./Graphs/rgm_potential_DeltaMinMax.pdf  used on input 
+line 735.
+(pdftex.def)             Requested size: 229.49844pt x 160.64917pt.
 
 Class revtex4-1 Warning: Command \address is obsolete;
 Use \affiliation instead.
@@ -671,24 +741,25 @@ Use \affiliation instead.
 
 Package natbib Warning: There were undefined citations.
 
-[7] [8 <./Graphs/rgm_potential.pdf>] (./Draft_0.3.aux)
+[8] [9 <./Graphs/rgm_potential.pdf> <./Graphs/rgm_potential_MinMax.pdf> <./Grap
+hs/rgm_potential_DeltaMinMax.pdf>] (./Draft_0.3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9080 strings out of 479307
- 123634 string characters out of 5867338
- 422132 words of memory out of 5000000
- 26084 multiletter control sequences out of 15000+600000
- 431803 words of font info for 128 fonts, out of 8000000 for 9000
+ 10325 strings out of 479307
+ 148098 string characters out of 5867338
+ 470397 words of memory out of 5000000
+ 27308 multiletter control sequences out of 15000+600000
+ 436537 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,10n,88p,470b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,15n,88p,717b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/
-usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/
-local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/loca
-l/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{/usr/local/te
-xlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/local/texliv
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/
+local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/loca
+l/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/local/te
+xlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{/usr/local/texliv
 e/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol5.pfb></usr/local/texlive/202
@@ -702,25 +773,27 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti9.pfb>
-Output written on Draft_0.3.pdf (8 pages, 439015 bytes).
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti9.pfb>
+Output written on Draft_0.3.pdf (9 pages, 530324 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 312 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
