@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.9)  28 MAR 2022 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.9)  26 MAY 2022 17:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -471,9 +471,6 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box74
 ) (./Draft_0.3.aux
 
-LaTeX Warning: Label `fig:Resonance_pole' multiply defined.
-
-
 LaTeX Warning: Label `eq.app.rgmwfkt' multiply defined.
 
 
@@ -525,132 +522,36 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \openout3 = `Draft_0.3Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 88
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 86
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 
-Package natbib Warning: Citation `osti_4230875' on page 1 undefined on input li
-ne 137.
-
-
-Package natbib Warning: Citation `Phillips:1980zz' on page 1 undefined on input
- line 137.
-
-
-Package natbib Warning: Citation `Tilley:1992zz' on page 1 undefined on input l
-ine 137.
-
-
-Package natbib Warning: Citation `Ciesielski:1997vy' on page 1 undefined on inp
-ut line 138.
-
-
-Package natbib Warning: Citation `Ciesielski:1998sy' on page 1 undefined on inp
-ut line 138.
-
-
-Package natbib Warning: Citation `Ciesielski:1999pp' on page 1 undefined on inp
-ut line 138.
-
-
-Package natbib Warning: Citation `Viviani:1998gr' on page 1 undefined on input 
-line 138.
-
-
-Package natbib Warning: Citation `Fonseca:1999zz' on page 1 undefined on input 
-line 138.
-
-
-Package natbib Warning: Citation `Lazauskas:2004uq' on page 1 undefined on inpu
-t line 138.
-
-
-Package natbib Warning: Citation `Arai:2003ek' on page 1 undefined on input lin
-e 140.
-
-
-Package natbib Warning: Citation `deDiego:2007rd' on page 1 undefined on input 
-line 140.
-
-
-Package natbib Warning: Citation `Lazauskas:2019cxj' on page 1 undefined on inp
-ut line 140.
-
-
-Package natbib Warning: Citation `Tilley:1992zz' on page 1 undefined on input l
-ine 143.
-
-[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `vanKolck:1999mw' on page 2 undefined on input
- line 183.
-
-
-Package natbib Warning: Citation `Schafer:2020ivj' on page 2 undefined on input
- line 196.
-
-
-Package natbib Warning: Citation `Contessi:2017rww' on page 2 undefined on inpu
-t line 196.
-
-
-Package natbib Warning: Citation `Schafer:2020rba' on page 2 undefined on input
- line 207.
-
-
-Package natbib Warning: Citation `vanKolck:1999mw' on page 2 undefined on input
- line 265.
-
-[2]
-<./Graphs/a0a1.png, id=30, 1062.97125pt x 657.45625pt>
-File: ./Graphs/a0a1.png Graphic file (type png)
-<use ./Graphs/a0a1.png>
-Package pdftex.def Info: ./Graphs/a0a1.png  used on input line 351.
-(pdftex.def)             Requested size: 484.49844pt x 299.67476pt.
- [3]
-<./Graphs/E4H.png, id=41, 817.0525pt x 504.88625pt>
-File: ./Graphs/E4H.png Graphic file (type png)
-<use ./Graphs/E4H.png>
-Package pdftex.def Info: ./Graphs/E4H.png  used on input line 391.
-(pdftex.def)             Requested size: 484.49844pt x 299.39026pt.
- [4 <./Graphs/a0a1.png>]
-<./Graphs/unitarityA.png, id=46, 681.54625pt x 424.58624pt>
-File: ./Graphs/unitarityA.png Graphic file (type png)
-<use ./Graphs/unitarityA.png>
-Package pdftex.def Info: ./Graphs/unitarityA.png  used on input line 425.
-(pdftex.def)             Requested size: 484.49844pt x 301.8341pt.
-
-No file Draft_0.3.bbl.
-[5 <./Graphs/E4H.png>]
-
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 87.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 470.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 87.
 
-[6 <./Graphs/unitarityA.png>]
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 5
-47.
-
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 1
+64.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd)
-Overfull \hbox (9.2048pt too wide) in paragraph at lines 559--565
+Overfull \hbox (9.2048pt too wide) in paragraph at lines 176--182
 \OT1/cmr/m/n/10 (ii) ex-pand-ing the tri-ton ground state in Gaus-sians, $\OML/
 cmm/m/it/10 ^^^\OMX/MnSymbolE/m/n/10 à\OT1/cmr/m/n/10 3\OMX/MnSymbolE/m/n/10 ç 
 \U/MnSymbolD/m/n/10 ^^@ [][]  \OML/cmm/m/it/10 c[] \U/MnSymbolC/m/n/10 ^^@ \OML
@@ -661,107 +562,79 @@ cmm/m/it/10 ^^^\OMX/MnSymbolE/m/n/10 à\OT1/cmr/m/n/10 3\OMX/MnSymbolE/m/n/10 ç
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 569.
+(amsmath)                 on input line 186.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 569.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 186.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 570.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 187.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 570.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 187.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 573.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 190.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 573.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 190.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 574.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 191.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 574.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 191.
 
+[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 614.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 231.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 614.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 231.
 
 
-Overfull \hbox (32.53168pt too wide) in paragraph at lines 606--628
+Overfull \hbox (32.53168pt too wide) in paragraph at lines 223--245
  []$[]$ 
  []
 
 
-Overfull \hbox (45.00638pt too wide) detected at line 664
+Overfull \hbox (45.00638pt too wide) detected at line 281
 []
  []
 
-[7]
+[2]
 
 pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./Graph
-s/rgm_potential.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
-on <1.5> allowed
-<./Graphs/rgm_potential.pdf, id=68, 361.35pt x 252.945pt>
-File: ./Graphs/rgm_potential.pdf Graphic file (type pdf)
-<use ./Graphs/rgm_potential.pdf>
-Package pdftex.def Info: ./Graphs/rgm_potential.pdf  used on input line 715.
+s/rgm_potential_nucl.pdf): PDF inclusion: found PDF version <1.7>, but at most 
+version <1.5> allowed
+<./Graphs/rgm_potential_nucl.pdf, id=45, 361.35pt x 252.945pt>
+File: ./Graphs/rgm_potential_nucl.pdf Graphic file (type pdf)
+<use ./Graphs/rgm_potential_nucl.pdf>
+Package pdftex.def Info: ./Graphs/rgm_potential_nucl.pdf  used on input line 33
+2.
 (pdftex.def)             Requested size: 484.49844pt x 339.15295pt.
-
-
-pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./Graph
-s/rgm_potential_MinMax.pdf): PDF inclusion: found PDF version <1.7>, but at mos
-t version <1.5> allowed
-<./Graphs/rgm_potential_MinMax.pdf, id=69, 361.35pt x 252.945pt>
-File: ./Graphs/rgm_potential_MinMax.pdf Graphic file (type pdf)
-<use ./Graphs/rgm_potential_MinMax.pdf>
-Package pdftex.def Info: ./Graphs/rgm_potential_MinMax.pdf  used on input line 
-728.
-(pdftex.def)             Requested size: 229.49844pt x 160.64917pt.
-
-
-pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./Graph
-s/rgm_potential_DeltaMinMax.pdf): PDF inclusion: found PDF version <1.7>, but a
-t most version <1.5> allowed
-<./Graphs/rgm_potential_DeltaMinMax.pdf, id=70, 252.945pt x 361.35pt>
-File: ./Graphs/rgm_potential_DeltaMinMax.pdf Graphic file (type pdf)
-<use ./Graphs/rgm_potential_DeltaMinMax.pdf>
-Package pdftex.def Info: ./Graphs/rgm_potential_DeltaMinMax.pdf  used on input 
-line 735.
-(pdftex.def)             Requested size: 252.94438pt x 361.34912pt.
-
-Class revtex4-1 Warning: Command \address is obsolete;
-Use \affiliation instead.
-
-
-Package natbib Warning: There were undefined citations.
-
-[8] [9 <./Graphs/rgm_potential.pdf> <./Graphs/rgm_potential_MinMax.pdf> <./Grap
-hs/rgm_potential_DeltaMinMax.pdf, page is rotated 90 degrees>] (./Draft_0.3.aux
-)
+No file Draft_0.3.bbl.
+[3] [4 <./Graphs/rgm_potential_nucl.pdf>] (./Draft_0.3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10325 strings out of 479307
- 148098 string characters out of 5867338
- 470397 words of memory out of 5000000
- 27308 multiletter control sequences out of 15000+600000
- 436537 words of font info for 143 fonts, out of 8000000 for 9000
+ 10249 strings out of 479307
+ 146655 string characters out of 5867338
+ 456397 words of memory out of 5000000
+ 27250 multiletter control sequences out of 15000+600000
+ 432451 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,15n,88p,717b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,15n,88p,715b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{/
-usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/
-local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/loca
-l/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/local/te
-xlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{/usr/local/texliv
-e/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/local/texlive/20
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/usr/
+local/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/usr/loca
+l/texlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{/usr/local/te
+xlive/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/usr/local/texliv
+e/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}</usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol5.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol6.pfb></usr/local/texlive/2020
@@ -769,32 +642,29 @@ e/2020/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}</usr/local/texlive/20
 texmf-dist/fonts/type1/public/mnsymbol/MnSymbol9.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti9.pfb>
-Output written on Draft_0.3.pdf (9 pages, 530271 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb>
+Output written on Draft_0.3.pdf (4 pages, 341120 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
+ 190 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
