@@ -1,0 +1,523 @@
+%\documentclass[aps,onecolumn,preprintnumbers,amsmath,amssymb	%\documentclass[aps,onecolumn,preprintnumbers,amsmath,amssymb
+%\documentclass[preprint,12pt]{elsarticle}			%\documentclass[preprint,12pt]{elsarticle}
+\documentclass[5p,times]{elsarticle}				\documentclass[5p,times]{elsarticle}
+%\documentclass[aps,nofootinbib,prl,showpacs,twocolumn,groupe	%\documentclass[aps,nofootinbib,prl,showpacs,twocolumn,groupe
+
+
+\usepackage{graphicx}						\usepackage{graphicx}
+\usepackage{dashrule}						\usepackage{dashrule}
+\usepackage{dcolumn}						\usepackage{dcolumn}
+\usepackage{mathtools}						\usepackage{mathtools}
+\usepackage{amssymb}						\usepackage{amssymb}
+\usepackage{bbold}						\usepackage{bbold}
+\usepackage{amsmath}						\usepackage{amsmath}
+\usepackage{amsfonts}						\usepackage{amsfonts}
+\usepackage{wasysym}						\usepackage{wasysym}
+\usepackage{slashed}						\usepackage{slashed}
+\usepackage[dvipsnames]{xcolor}					\usepackage[dvipsnames]{xcolor}
+\usepackage{soul}						\usepackage{soul}
+\usepackage{rotating}						\usepackage{rotating}
+\usepackage{paracol}						\usepackage{paracol}
+\usepackage{nicefrac}						\usepackage{nicefrac}
+\usepackage{MnSymbol}						\usepackage{MnSymbol}
+
+%\usepackage{subcaption}					%\usepackage{subcaption}
+%\newbox{\bigpicturebox}					%\newbox{\bigpicturebox}
+
+\newcommand{\reales}{{\rm R}\hspace{-1ex}\rule{0.1mm}{1.5ex}\	\newcommand{\reales}{{\rm R}\hspace{-1ex}\rule{0.1mm}{1.5ex}\
+\def\tstrut{\vrule height2.5ex depth0pt width0pt} % used in t	\def\tstrut{\vrule height2.5ex depth0pt width0pt} % used in t
+\def\jtstrut{\vrule height5ex depth0pt width0pt} % used in ta	\def\jtstrut{\vrule height5ex depth0pt width0pt} % used in ta
+
+\newcommand{\figref}[1]{fig.~(\ref{#1})}			\newcommand{\figref}[1]{fig.~(\ref{#1})}
+\newcommand{\tabref}[1]{table~(\ref{#1})}			\newcommand{\tabref}[1]{table~(\ref{#1})}
+\newcommand{\ccite}[1]{ref.~\cite{#1}}				\newcommand{\ccite}[1]{ref.~\cite{#1}}
+
+\newcommand{\eref}[1]{eq.~(\ref{#1})}				\newcommand{\eref}[1]{eq.~(\ref{#1})}
+\newcommand{\eg}{\textit{e.g.}~}				\newcommand{\eg}{\textit{e.g.}~}
+\newcommand{\ie}{\textit{i.e.}~}				\newcommand{\ie}{\textit{i.e.}~}
+\newcommand{\viz}{\textit{viz.}~}				\newcommand{\viz}{\textit{viz.}~}
+\newcommand{\cf}{\textit{cf.}~}					\newcommand{\cf}{\textit{cf.}~}
+\newcommand{\eftnopi}{\mbox{EFT($\slashed{\pi}$) }}		\newcommand{\eftnopi}{\mbox{EFT($\slashed{\pi}$) }}
+\newcommand{\ve}[1]{\ensuremath{\boldsymbol{#1}}}		\newcommand{\ve}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\rcm}{\ensuremath{\ve{R}_\text{\scriptsize{c.m.}}	\newcommand{\rcm}{\ensuremath{\ve{R}_\text{\scriptsize{c.m.}}
+\newcommand*{\mprime}{^{\prime}\mkern-1.2mu}			\newcommand*{\mprime}{^{\prime}\mkern-1.2mu}
+\newcommand*{\mdprime}{^{\prime\prime}\mkern-1.2mu}		\newcommand*{\mdprime}{^{\prime\prime}\mkern-1.2mu}
+\newcommand*{\mtprime}{^{\prime\prime\prime}\mkern-1.2mu}	\newcommand*{\mtprime}{^{\prime\prime\prime}\mkern-1.2mu}
+\newcommand{\ddrei}[1]{\delta_{\tiny \lambda}^{(3)}\!\big(#1\	\newcommand{\ddrei}[1]{\delta_{\tiny \lambda}^{(3)}\!\big(#1\
+\newcommand{\cc}{\ensuremath C(\lambda)}			\newcommand{\cc}{\ensuremath C(\lambda)}
+\newcommand{\dd}{\ensuremath D(\lambda)}			\newcommand{\dd}{\ensuremath D(\lambda)}
+\newcommand{\hbstwom}{\ensuremath \frac{\hbar^2}{2\mu}}		\newcommand{\hbstwom}{\ensuremath \frac{\hbar^2}{2\mu}}
+\newcommand{\twomhbs}{\ensuremath \frac{2\mu}{\hbar^2}}		\newcommand{\twomhbs}{\ensuremath \frac{2\mu}{\hbar^2}}
+\newcommand{\coup}[3]{\left[\,#1\,\otimes\,#2\,\right]^{#3}}	\newcommand{\coup}[3]{\left[\,#1\,\otimes\,#2\,\right]^{#3}}
+\newcommand{\threej}[6]{ \begin{pmatrix}			\newcommand{\threej}[6]{ \begin{pmatrix}
+   #1 & #2 & #3 \\						   #1 & #2 & #3 \\
+   #4 & #5 & #6							   #4 & #5 & #6
+  \end{pmatrix}}						  \end{pmatrix}}
+
+\newcommand{\bra}[1] {\left\langle~#1~\right|}			\newcommand{\bra}[1] {\left\langle~#1~\right|}
+\newcommand{\ket}[1] {\left|~#1~\right\rangle}			\newcommand{\ket}[1] {\left|~#1~\right\rangle}
+\newcommand{\bet}[1] {\left|#1\right|}				\newcommand{\bet}[1] {\left|#1\right|}
+\newcommand{\overlap}[2] {\left\langle\,#1\,\left|\,#2\,\righ	\newcommand{\overlap}[2] {\left\langle\,#1\,\left|\,#2\,\righ
+\newcommand{\me}[3] {\left\langle\,#1\,\left.\left|\,#2\,\rig	\newcommand{\me}[3] {\left\langle\,#1\,\left.\left|\,#2\,\rig
+\newcommand{\mer}[3] {\left\langle\,#1\,\left|\left.\,#2\,\ri	\newcommand{\mer}[3] {\left\langle\,#1\,\left|\left.\,#2\,\ri
+\newcommand{\redme}[3] {\left\langle\,#1\,\middle|\right|\,#2	\newcommand{\redme}[3] {\left\langle\,#1\,\middle|\right|\,#2
+
+\definecolor{green}{HTML}{2E8B57}				\definecolor{green}{HTML}{2E8B57}
+\interfootnotelinepenalty=10000 %% Completely prevent breakin	\interfootnotelinepenalty=10000 %% Completely prevent breakin
+
+\usepackage{xcolor}						\usepackage{xcolor}
+\colorlet{darkgreen}{green!50!black}				\colorlet{darkgreen}{green!50!black}
+\colorlet{brightyellow}{yellow!75!red}				\colorlet{brightyellow}{yellow!75!red}
+\colorlet{orange}{red!50!yellow} \colorlet{darkred}{red!80!bl	\colorlet{orange}{red!50!yellow} \colorlet{darkred}{red!80!bl
+\colorlet{darkblue}{blue!50!black}				\colorlet{darkblue}{blue!50!black}
+
+\usepackage{soul}						\usepackage{soul}
+\newcommand{\remove}[1] {\textcolor{darkred}{\st{#1}}}		\newcommand{\remove}[1] {\textcolor{darkred}{\st{#1}}}
+\newcommand{\comment}[2] {\textcolor{green}{[\textbf{comment 	\newcommand{\comment}[2] {\textcolor{green}{[\textbf{comment 
+\newcommand{\remark}[2] {\textcolor{orange}{[\textbf{\textsf{	\newcommand{\remark}[2] {\textcolor{orange}{[\textbf{\textsf{
+\newcommand{\highlight}[1] {\textcolor{red}{{#1}}}		\newcommand{\highlight}[1] {\textcolor{red}{{#1}}}
+\newcommand{\repl}[2] {\textcolor{darkred}{\st{#1}}\textcolor	\newcommand{\repl}[2] {\textcolor{darkred}{\st{#1}}\textcolor
+\newcommand{\place}[1] {\textcolor{blue}{{#1}}}			\newcommand{\place}[1] {\textcolor{blue}{{#1}}}
+\newcommand{\edit}[1] {\textcolor{red}{{#1}}}			\newcommand{\edit}[1] {\textcolor{red}{{#1}}}
+
+\begin{document}						\begin{document}
+
+
+
+\title{Emergence of $^4$H $J^\pi=1^-$ resonance in contact th	\title{Emergence of $^4$H $J^\pi=1^-$ resonance in contact th
+
+\author{Lorenzo Contessi}%\email{lorenzo@contessi.net}		\author{Lorenzo Contessi}%\email{lorenzo@contessi.net}
+\address{Universit\'e Paris-Saclay, CNRS-IN2P3, IJCLab, 91405	\address{Universit\'e Paris-Saclay, CNRS-IN2P3, IJCLab, 91405
+\address{IRFU, CEA, Universit\'e Paris-Saclay, 91191 Gif-sur-	\address{IRFU, CEA, Universit\'e Paris-Saclay, 91191 Gif-sur-
+
+\author{Martin Sch{\"a}fer}					\author{Martin Sch{\"a}fer}
+\address{The Racah Institute of Physics, The Hebrew Universit	\address{The Racah Institute of Physics, The Hebrew Universit
+
+\author{Johannes Kirscher}					\author{Johannes Kirscher}
+\address{Department of Physics, SRM University - AP, Amaravat |	\address{Theoretical Physics Division, School of Physics and 
+							      >	  The University of Manchester, Manchester, M13 9PL, UK}
+
+\author{Rimantas Lazauskas}					\author{Rimantas Lazauskas}
+\address{IPHC, IN2P3-CNRS/Universit\'e de Strasbourg BP 28, F	\address{IPHC, IN2P3-CNRS/Universit\'e de Strasbourg BP 28, F
+
+\author{Jaume Carbonel}						\author{Jaume Carbonel}
+\address{Universit\'e Paris-Saclay, CNRS/IN2P3, IJCLab, 91405	\address{Universit\'e Paris-Saclay, CNRS/IN2P3, IJCLab, 91405
+
+
+
+
+\date{\today}							\date{\today}
+
+
+
+\begin{abstract}						\begin{abstract}
+
+Elastic neutron-triton scattering is considered at leading or |	We obtain the leading low-energy scattering parameters in the
+In the infinite-cutoff limit, we obtain the scattering length |	for elastic scattering of a neutron on a triton using the pio
+and the effective range $r_0(\infty) = 1.59(7)$~fm ($S$-wave) |	theory at leading order: a pure contact theory.
+In the $P$-wave channel, we predict a scattering volume $a_1( <
+and a range equivalent $r_1(\infty) = 1.3(4)$~fm$^{-1}$ with  <
+%								%
+The results are extracted with three numerical techniques: a	The results are extracted with three numerical techniques: a
+Gaussian-stochastic-variational method, an integration of the |	Gaussian-stochastic-variational method, solving the Faddeev-Y
+equations, and a resonating-group reduction of the four-body  |	equations in configuration space, and via an effective two-bo
+Renormalization-group dependence is assessed through variatio |	cluster theory. 
+range between $1\,\text{fm}^{-1}$ and $10\,\text{fm}^{-1}$.   |	The theory renormalization is assessed in a
+%							      |	cutoff-regulator range between $1\,\text{fm}^{-1}$ and
+Most remarkably, we find a cutoff-stable/RG-invariant resonan |	$10\,\text{fm}^{-1}$.
+This $P$-wave resonance is thus a universal consequence of th |	%
+and an ensuing discretely scale invariant three-body system w |	The $^4$H $J^\pi=1^-$ resonance emerges in this cutoff interv
+%							      |	as a universal consequence of the unitary deuteron system and
+This stabilization of a resonant state in a few-fermion syste |	%
+has a significant consequences for the powercounting of the p |
+Specifically, the existence of a resonance implies that the k |	%
+to bind larger nuclei like 16-oxygen can be cured in perturba |	The stabilization of
+							      >	resonant states in few-body fermionic systems with pure conta
+							      >	namely the possibility of overcoming the the recent stability
+							      >	perturbation theory.
+\end{abstract}							\end{abstract}
+
+\maketitle							\maketitle
+
+%================================================		%================================================
+\section{Introduction}						\section{Introduction}
+%================================================		%================================================
+
+Contact effective field theory (EFT) is not only practical in |	Contact effective field theory is a very successful approach 
+bosonic~\cite{Bazak:2016wxm,Carlson:2017txq,Bazak:2018qnu,Bed |	%
+and few-nucleon~\cite{Bedaque:1999ve,Barnea:2013uqa} systems, |	The common result of these LO studies indicates that beyond $
+expansion of the underlying scales and their interactions~\ci |	As an example one of the lightest bound $p$-shell nucleus $^6
+thereby provides a transparent framework to study the emergen |	Nonetheless, it can be argued that this effect is only due to
+However, the nuclear incarnation of such a theory, Pionless e |	Only after the inclusion of higher order corrections these po
+stable bound states for $P$-shell			      |	Since perturbative insertion of higher order terms can not cr
+nuclei\footnote{Fermi systems with more particles than access <
+at the leading order (LO)~\cite{Stetcu:2006ey,Contessi:2017rw <
+%							      <
+For instance, the lightest of such nuclei, $^6 {\rm Li}$, is  <
+found unstable with respect to breakup into $\rm ^4He$ in its <
+and a deuteron ($d$) in the zero-range contact limit~\cite{Sc <
+Whether or not the theory finds the physical bound state at L <
+reveals its physical character at higher orders is arguably t <
+Fermi systems.						      <
+As perturbative higher-order insertions cannot create poles { <
+within the convergence radius of LO~\eftnopi~would make the t <
+of larger nuclei.					      <
+The challenge cast in simple words: Does the LO~\eftnopi~supp <
+breakdown scale?					      <
+
+Historically, resonances were studied in (A$\le$4)-body boson	Historically, resonances were studied in (A$\le$4)-body boson
+A recent study\cite{Habashi:2020qgw} proved the possibility o |	A recent study\cite{Habashi:2020qgw} proved the possibility o
+In the \eftnopi at LO framework, a resonance have been also f |	In the \eftnopi at LO framework, a resonance have been also f
+Finally, a recent study of $^3n$ confirmed the absence of $P$ |	Finally, a recent study of $^3n$ confirmed the absence of $p$
+At the present knowledge of the authors, the calculations of  |	At the present knowledge of the authors, the calculations of 
+The major goal of this work is to study resonances in $^4$H a	The major goal of this work is to study resonances in $^4$H a
+The existence of an eventual $P$-shell resonance using \eftno |	The existence of an eventual $p$-shell resonance using \eftno
+%								%
+
+%								%
+Experimentally, $^4$H resonances are clearly seen in n-$^3$H 	Experimentally, $^4$H resonances are clearly seen in n-$^3$H 
+However, extracted resonance parameters differ substantially,	However, extracted resonance parameters differ substantially,
+For instance, results of the same $\pi^-$+$^9$Be$\,\to\,$d+t+	For instance, results of the same $\pi^-$+$^9$Be$\,\to\,$d+t+
+Independently, the $R$-matrix analysis of n-$^3$H cross secti	Independently, the $R$-matrix analysis of n-$^3$H cross secti
+With two non-degenerate $J^\pi$=$1^-$ states (denoted $1^-_I$	With two non-degenerate $J^\pi$=$1^-$ states (denoted $1^-_I$
+The lowest state parameters found in this case ($E_R$=3.2 MeV	The lowest state parameters found in this case ($E_R$=3.2 MeV
+The discrepancies among different experimental approaches fur	The discrepancies among different experimental approaches fur
+increase when including the transfer reaction experiments.	increase when including the transfer reaction experiments.
+%								%
+
+From a numerical point of view, computing the $S$-matrix pole	From a numerical point of view, computing the $S$-matrix pole
+Microscopic ab initio calculations for nuclear few-body syste	Microscopic ab initio calculations for nuclear few-body syste
+This limit is often circumvented by changing the calculation	This limit is often circumvented by changing the calculation
+degrees of freedom and treating the many-body systems as a fe	degrees of freedom and treating the many-body systems as a fe
+Resonances in $^4$H have been studied in the past, for exampl	Resonances in $^4$H have been studied in the past, for exampl
+Here, the resonance energy has been calculated either directl	Here, the resonance energy has been calculated either directl
+%								%
+% I dont know why this was removed, but it is the main point 	% I dont know why this was removed, but it is the main point 
+This result further enhances the difference between the posit	This result further enhances the difference between the posit
+%								%
+Other calculations have been done in Refs.~\cite{Arai:2003ek,	Other calculations have been done in Refs.~\cite{Arai:2003ek,
+This variation appears to be a consequence of the different n	This variation appears to be a consequence of the different n
+
+%								%
+%								%
+
+In this letter, we study the emergence of a 3+1 $J^{\pi}=1^-$	In this letter, we study the emergence of a 3+1 $J^{\pi}=1^-$
+In the region of resonance projectile neutron momentum is $\s	In the region of resonance projectile neutron momentum is $\s
+As $^4$H can still be treated as both a four-body and two-clu	As $^4$H can still be treated as both a four-body and two-clu
+
+%================================================		%================================================
+\section{Theory and numerical methods}				\section{Theory and numerical methods}
+%================================================		%================================================
+
+The theory used in this work is the \eftnopi\cite{vanKolck:19	The theory used in this work is the \eftnopi\cite{vanKolck:19
+Therefore, $NN$ spin-singlet and spin-triplet interactions ar	Therefore, $NN$ spin-singlet and spin-triplet interactions ar
+%								%
+\begin{equation}						\begin{equation}
+    V(\textbf{r})=C_0 \sum_{i,j}^N e^{-\frac{r_{ij}^2\Lambda^	    V(\textbf{r})=C_0 \sum_{i,j}^N e^{-\frac{r_{ij}^2\Lambda^
+\end{equation}							\end{equation}
+%								%
+\begin{equation}						\begin{equation}
+    W(\textbf{r})=D_0 \sum_{ijk}^N \left[			    W(\textbf{r})=D_0 \sum_{ijk}^N \left[
+    e^{-\frac{(r_{ij}^2+r_{ik}^2)\Lambda^2}{4}}+		    e^{-\frac{(r_{ij}^2+r_{ik}^2)\Lambda^2}{4}}+
+    e^{-\frac{(r_{ij}^2+r_{jk}^2)\Lambda^2}{4}}+		    e^{-\frac{(r_{ij}^2+r_{jk}^2)\Lambda^2}{4}}+
+    e^{-\frac{(r_{jk}^2+r_{ik}^2)\Lambda^2}{4}}\right],		    e^{-\frac{(r_{jk}^2+r_{ik}^2)\Lambda^2}{4}}\right],
+\end{equation}							\end{equation}
+%								%
+where the cut-off dependent LECs ($C_0$ and $D_0$) are fitted	where the cut-off dependent LECs ($C_0$ and $D_0$) are fitted
+In order to assess the uncertainty introduced by the adoption	In order to assess the uncertainty introduced by the adoption
+
+To extract the effective range parameters and resonance energ	To extract the effective range parameters and resonance energ
+and a potential folding technique that reduces the problem in	and a potential folding technique that reduces the problem in
+
+Employing the above interaction we extract the triton-neutron	Employing the above interaction we extract the triton-neutron
+%								%
+\begin{equation}						\begin{equation}
+    k^{2L+1}\text{cot}(\delta_L)=-\frac{1}{a_L}+\frac{1}{2}r_	    k^{2L+1}\text{cot}(\delta_L)=-\frac{1}{a_L}+\frac{1}{2}r_
+    \label{eq.app.ere}						    \label{eq.app.ere}
+\end{equation}							\end{equation}
+%								%
+where $\delta_L$ is the triton-neutron phase-shift at angular	where $\delta_L$ is the triton-neutron phase-shift at angular
+Resonances will, therefore, emerge as poles of the system's $	Resonances will, therefore, emerge as poles of the system's $
+%								%
+\begin{equation}						\begin{equation}
+T =\frac{4\pi}{m}\frac{1}{\text{cot}(\delta)-i} =		T =\frac{4\pi}{m}\frac{1}{\text{cot}(\delta)-i} =
+\frac{4\pi}{m}\frac{k^{2L+1}}{\frac{1}{a_L}+...+\frac{1}{2}r_	\frac{4\pi}{m}\frac{k^{2L+1}}{\frac{1}{a_L}+...+\frac{1}{2}r_
+-ik^{2L+1}} \label{eq:Tmatrix}					-ik^{2L+1}} \label{eq:Tmatrix}
+\end{equation}							\end{equation}
+%								%
+and can be extracted either by fitting phase shifts to the ER	and can be extracted either by fitting phase shifts to the ER
+%								%
+From an theoretical point of view, extracting the resonance e	From an theoretical point of view, extracting the resonance e
+Solving the Schr\"odinger equation for complex energies is af	Solving the Schr\"odinger equation for complex energies is af
+In the latter case, a new scale, the breaking momentum of $^3	In the latter case, a new scale, the breaking momentum of $^3
+Since the scattering parameters are extracted using \eftnopi 	Since the scattering parameters are extracted using \eftnopi 
+if the effective range $r_1$ is also included in the ERE.	if the effective range $r_1$ is also included in the ERE.
+
+\vspace{2mm}							\vspace{2mm}
+
+
+
+%================================================		%================================================
+\subsection{Faddeev-Yakubovsky equation formalism}		\subsection{Faddeev-Yakubovsky equation formalism}
+%================================================		%================================================
+
+This formalism, as well as our employed numerical techniques,	This formalism, as well as our employed numerical techniques,
+Here we will just stress that, in order to determine n-$^3$H 	Here we will just stress that, in order to determine n-$^3$H 
+%								%
+\begin{equation}						\begin{equation}
+\begin{split}							\begin{split}
+\Psi(X_{^3{\rm H}},\vec{y}_{n-^3{\rm H}})=&\lim_{k\rightarrow	\Psi(X_{^3{\rm H}},\vec{y}_{n-^3{\rm H}})=&\lim_{k\rightarrow
+&+a_L(k) [n_L(k|y_{n-^3{\rm H}}|)k^{L+1}]\big)Y_L(\hat{y}_{n-	&+a_L(k) [n_L(k|y_{n-^3{\rm H}}|)k^{L+1}]\big)Y_L(\hat{y}_{n-
+\end{split}							\end{split}
+\end{equation}							\end{equation}
+%								%
+here $j_L(z)$ and $n_L(z)$ are spherical Bessel functions of 	here $j_L(z)$ and $n_L(z)$ are spherical Bessel functions of 
+$\psi_t(X_{^3{\rm H}})$ is the wave function of the $^3$H gro	$\psi_t(X_{^3{\rm H}})$ is the wave function of the $^3$H gro
+In the particular case of determining the scattering lengths 	In the particular case of determining the scattering lengths 
+Note that, in the limit $k\rightarrow0$, the expressions in t	Note that, in the limit $k\rightarrow0$, the expressions in t
+
+To determine positions of the resonant states we solve FYE by	To determine positions of the resonant states we solve FYE by
+\begin{equation}						\begin{equation}
+\begin{split}							\begin{split}
+\Psi(X_{^3{\rm H}},\vec{y}_{n-^3{\rm H}})=&\psi_t(X_{^3{\rm H	\Psi(X_{^3{\rm H}},\vec{y}_{n-^3{\rm H}})=&\psi_t(X_{^3{\rm H
+&+F_L(k_r)h_L^-(k_{r}|y_{n-^3{\rm H}}|)\big) Y_L(\hat{y}_{n-^	&+F_L(k_r)h_L^-(k_{r}|y_{n-^3{\rm H}}|)\big) Y_L(\hat{y}_{n-^
+\end{split}							\end{split}
+\end{equation}							\end{equation}
+here $h_L^-(z)$ and $h_L^+(z)$ are Spherical Bessel functions	here $h_L^-(z)$ and $h_L^+(z)$ are Spherical Bessel functions
+ 								 
+%================================================		%================================================
+\subsection{Harmonic oscillator trap}				\subsection{Harmonic oscillator trap}
+%================================================		%================================================
+The second microscopic approach involves an introduction of t	The second microscopic approach involves an introduction of t
+\begin{equation}						\begin{equation}
+    V_{\rm HO}(\textbf{r}) = \frac{m}{2A} \omega^2 \sum_{i<j}	    V_{\rm HO}(\textbf{r}) = \frac{m}{2A} \omega^2 \sum_{i<j}
+\end{equation}							\end{equation}
+with oscillator frequency $\omega$ into $A=4$-body $^4$H syst	with oscillator frequency $\omega$ into $A=4$-body $^4$H syst
+
+Assuming that the range of an interaction is much smaller tha	Assuming that the range of an interaction is much smaller tha
+
+\begin{equation}						\begin{equation}
+    (-)^{L+1} \left(\sqrt{4\mu \omega}\right)^{2L+1} \frac{\G	    (-)^{L+1} \left(\sqrt{4\mu \omega}\right)^{2L+1} \frac{\G
+\end{equation}							\end{equation}
+where $ k=\sqrt{2\mu \epsilon^n_\omega}$, $\Gamma(x)$ is a Ga |	where $ k=\sqrt{2\mu \epsilon^n_\omega}$, $\Gamma(x)$ is a Ga
+							      >
+							      >	\begin{figure*}
+							      >	\centering
+							      >	  \centering
+							      >	  \includegraphics[width=\linewidth]{Graphs/ere.pdf}
+							      >	  \caption{Left panel : $S$-wave scattering length $a_0$ and 
+							      >	  \label{fig:ERE_Parameters}
+							      >	\end{figure*}
+
+%================================================		%================================================
+\subsection{Resonating Group Method}				\subsection{Resonating Group Method}
+%================================================		%================================================
+Finally, the RGM technique was used to fold the two- and thre	Finally, the RGM technique was used to fold the two- and thre
+the neutron in an effective n-$^3$H potential. This is done a	the neutron in an effective n-$^3$H potential. This is done a
+%								%
+The input of this procedure is the $^3$H wave function, which	The input of this procedure is the $^3$H wave function, which
+A linear combination of 5 Gaussians was used to parametrize t	A linear combination of 5 Gaussians was used to parametrize t
+The requirement of having as input the wave function of the c	The requirement of having as input the wave function of the c
+However, the possibility of transforming a four-fermion scatt	However, the possibility of transforming a four-fermion scatt
+%								%
+On one hand, the RGM potential loses some of the microscopic 	On one hand, the RGM potential loses some of the microscopic 
+On the other, the folded two-body scattering problem can be s	On the other, the folded two-body scattering problem can be s
+%								%
+Moreover, and beyond the simplification of the many-body scat	Moreover, and beyond the simplification of the many-body scat
+of the effective cluster-particle interaction (after a partic	of the effective cluster-particle interaction (after a partic
+%								%
+%\highlight{The details of the folding procedure and the fold	%\highlight{The details of the folding procedure and the fold
+
+
+%================================================		%================================================
+\section{Results and discussion}				\section{Results and discussion}
+%================================================		%================================================
+
+\begin{figure*}						      <
+\centering						      <
+  \centering						      <
+  \includegraphics[width=\linewidth]{Graphs/ere.pdf}	      <
+  \caption{Left panel : $S$-wave scattering length $a_0$ and  <
+  \label{fig:ERE_Parameters}				      <
+\end{figure*}						      <
+							      <
+
+We examine the scattering parameters of the n$^3$H system cal	We examine the scattering parameters of the n$^3$H system cal
+For scattering lengths $a_0$ and volumes $a_1$ we find relati	For scattering lengths $a_0$ and volumes $a_1$ we find relati
+The effective ranges in $S$-wave ($r_0$) and $P$-wave ($r_1$) |	The effective ranges in $s$-wave ($r_0$) and $p$-wave ($r_1$)
+
+The calculated $a_0,~r_0,~a_1$,~and~$r_1$ values using ab ini	The calculated $a_0,~r_0,~a_1$,~and~$r_1$ values using ab ini
+As expected for \eftnopi LO observables, all scattering param	As expected for \eftnopi LO observables, all scattering param
+\begin{equation}						\begin{equation}
+    O(\Lambda) = O(\infty) +\frac{a}{\Lambda}			    O(\Lambda) = O(\infty) +\frac{a}{\Lambda}
+    \label{extrapolation}					    \label{extrapolation}
+\end{equation}							\end{equation}
+thus extrapolating calculated scattering parameters to the co	thus extrapolating calculated scattering parameters to the co
+The resulting values extracted within \eftnopi at LO using th |	The resulting values extracted within \eftnopi at LO using th
+For the ``unitary'' $NN$ case we obtain $a_0(\infty) = 2.27(1 |	For the ``unitary'' $NN$ case we obtain $a_0(\infty) = 2.27(1
+%								%
+In line with the sign convention adopted in eq. \ref{eq.app.e |	In line with the sign convention adopted in eq. \ref{eq.app.e
+This is in agreement with the lacking of bound state solution |	This is in agreement with the lacking of bound state solution
+It is interesting to point out that, despite $S$-wave contact |	It is interesting to point out that, despite $s$-wave contact
+%								%
+Comparing the ``unitary'' with the "nuclear" cases, both repu |	Comparing the ``unitary'' with the "nuclear" cases, both repu
+%								%
+On a universal scale the scattering parameters can be express	On a universal scale the scattering parameters can be express
+natural units of the three-body scale $R_3=1/\sqrt{-2mE_3/\hb	natural units of the three-body scale $R_3=1/\sqrt{-2mE_3/\hb
+In this case, the scattering parameters are reasonably natura	In this case, the scattering parameters are reasonably natura
+%								%
+
+							      >	\begin{figure*}
+							      >	\centering
+							      >	\includegraphics[width=\textwidth]{./Graphs/rgm}
+							      >	%\includegraphics[width=.39\textwidth]{./Graphs/rgm_potential
+							      >	%\hfill
+							      >	%\includegraphics[width=.60\textwidth]{./Graphs/NonLocPot10_n
+							      >	\caption{\edit{change the capital R on left pannel and make s
+							      >	\end{figure*}
+							      >
+%								%
+A comparison with the experimental data and the other theoret |	A comparison with the experimental data and the other theoret
+As reference for theory and experiment we use the average sca	As reference for theory and experiment we use the average sca
+which are in good agreement with \eftnopi prediction consider	which are in good agreement with \eftnopi prediction consider
+%								%
+
+%								%
+Using the RGM method, the scattering parameters found are	Using the RGM method, the scattering parameters found are
+$a_0(\infty) = 5.71$~fm, $r_0(\infty) \simeq 0.$~fm, $a_1(\in	$a_0(\infty) = 5.71$~fm, $r_0(\infty) \simeq 0.$~fm, $a_1(\in
+$a_0(\infty) = 3.3$~fm, $r_0(\infty) \simeq 1.8$~fm, $a_1(\in	$a_0(\infty) = 3.3$~fm, $r_0(\infty) \simeq 1.8$~fm, $a_1(\in
+These results are relatively distant from the ab initio calcu	These results are relatively distant from the ab initio calcu
+Moreover, the RGM results appear to be highly sensitive to th	Moreover, the RGM results appear to be highly sensitive to th
+The result of RGM appear also to be natural and convergent (s	The result of RGM appear also to be natural and convergent (s
+%maybe we can add few more comments on this, but nothing come	%maybe we can add few more comments on this, but nothing come
+
+%								%
+
+%								%
+\begin{figure*}						      |
+\centering						      <
+\includegraphics[width=.39\textwidth]{./Graphs/rgm_potential_ <
+\hfill							      <
+\includegraphics[width=.60\textwidth]{./Graphs/NonLocPot10_nu <
+\caption{\edit{change the capital R on left pannel and make s <
+\end{figure*}						      <
+
+
+%								%
+
+%								%
+\vspace{2mm}							\vspace{2mm}
+%								%
+Although the effective n$^3$H interaction is not observable,  |	Although the effective n$^3$H interaction is not observable, 
+component to acquire a deeper insight into interplay between 	component to acquire a deeper insight into interplay between 
+A positive energy pocket at distance $r\simeq0.5$~fm can be n	A positive energy pocket at distance $r\simeq0.5$~fm can be n
+The non-symmetry of the interaction is a consequence of the f	The non-symmetry of the interaction is a consequence of the f
+Here, the repulsive part of the interaction (red) clearly dom	Here, the repulsive part of the interaction (red) clearly dom
+One can notice a weak attraction pocket ($min(V_{n-t})\approx	One can notice a weak attraction pocket ($min(V_{n-t})\approx
+The minimum of this pocket is too small to support a bound st	The minimum of this pocket is too small to support a bound st
+
+\begin{figure*}							\begin{figure*}
+\centering							\centering
+  \includegraphics[width=.98\linewidth]{Graphs/resonance.pdf}	  \includegraphics[width=.98\linewidth]{Graphs/resonance.pdf}
+  \caption{ Left panel : Complex energy plane with calculated	  \caption{ Left panel : Complex energy plane with calculated
+  The black triangles represent the position of the $1^-$ res	  The black triangles represent the position of the $1^-$ res
+  Right panel: The absolute value, real, and imaginary part o	  Right panel: The absolute value, real, and imaginary part o
+  \label{fig:Pole_PositionN}					  \label{fig:Pole_PositionN}
+\end{figure*}							\end{figure*}
+
+%								%
+So far our calculations revealed non-vanishing $P$-wave attra |	So far our calculations revealed non-vanishing $p$-wave attra
+
+In the left panel of fig.~\ref{fig:Pole_PositionN}, the evolu	In the left panel of fig.~\ref{fig:Pole_PositionN}, the evolu
+Therefore, we transform calculated resonance energies into n-	Therefore, we transform calculated resonance energies into n-
+\begin{equation}						\begin{equation}
+    k^{res}_{n ^3{\rm H}} = \sqrt{2 \mu E^{res}_{n ^3{\rm H}}	    k^{res}_{n ^3{\rm H}} = \sqrt{2 \mu E^{res}_{n ^3{\rm H}}
+    \label{mmnt}						    \label{mmnt}
+\end{equation}							\end{equation}
+where $\mu \approx 3/4 m$ is the reduce mass of the two-body 	where $\mu \approx 3/4 m$ is the reduce mass of the two-body 
+\begin{equation}						\begin{equation}
+    \begin{split}						    \begin{split}
+        {\rm Re}(k^{res}_{n ^3{\rm H}}) &= \sqrt{\frac{2\mu \	        {\rm Re}(k^{res}_{n ^3{\rm H}}) &= \sqrt{\frac{2\mu \
+        {\rm Im}(k^{res}_{n ^3{\rm H}}) &=  {\rm sgn}\left({\	        {\rm Im}(k^{res}_{n ^3{\rm H}}) &=  {\rm sgn}\left({\
+    \end{split}							    \end{split}
+    \label{kreim}						    \label{kreim}
+\end{equation}							\end{equation}
+
+The ${\rm Re}(k^{res}_{n ^3{\rm H}})$, ${\rm Im}(k^{res}_{n ^	The ${\rm Re}(k^{res}_{n ^3{\rm H}})$, ${\rm Im}(k^{res}_{n ^
+For cut-off values larger than the breakup scale of the theor	For cut-off values larger than the breakup scale of the theor
+%								%
+
+%								%
+We notice that the resonance position can also be found as po	We notice that the resonance position can also be found as po
+Truncating the ERE at the scattering volume we expect a devia	Truncating the ERE at the scattering volume we expect a devia
+Doing this exercise we find a resonant momentum of $k^{res}_{	Doing this exercise we find a resonant momentum of $k^{res}_{
+Confirming that the pole is also inside the convergence value	Confirming that the pole is also inside the convergence value
+%								%
+
+%								%
+Comparing our $^4$H resonance result with experimental data a	Comparing our $^4$H resonance result with experimental data a
+Theoretically, this is not an issue since the pole existence 	Theoretically, this is not an issue since the pole existence 
+% I dont like this statement bc the LO is compatible with a n	% I dont like this statement bc the LO is compatible with a n
+%However, such a subthreshold resonance has only small impact	%However, such a subthreshold resonance has only small impact
+%								%
+
+%								%
+Due to the difficulty of comparing different experimental set	Due to the difficulty of comparing different experimental set
+%								%
+To stress this point, one can notice that the $S$-matrix pole	To stress this point, one can notice that the $S$-matrix pole
+An illustrative example is provided by the  transfer reaction	An illustrative example is provided by the  transfer reaction
+The $R$-matrix analysis of the results obtains for the lowest	The $R$-matrix analysis of the results obtains for the lowest
+Therefore, a fair comparison can only be done with other $S$-	Therefore, a fair comparison can only be done with other $S$-
+%								%
+The study done in refs~\cite{Lazauskas:2019hil,Arai:2003ek, d	The study done in refs~\cite{Lazauskas:2019hil,Arai:2003ek, d
+\eftnopi at LO predicts a slightly less energetic but much na	\eftnopi at LO predicts a slightly less energetic but much na
+The maximum relative distance between the poles momentum is $	The maximum relative distance between the poles momentum is $
+%								%
+
+%								%
+The same calculations have been repeated using the ``unitary'	The same calculations have been repeated using the ``unitary'
+Despite this pole being relatively close to the one previousl	Despite this pole being relatively close to the one previousl
+
+
+%================================================		%================================================
+\section{Conclusions}						\section{Conclusions}
+%================================================		%================================================
+%								%
+In this work, we observe the appearance of a stable $J^{\pi}=	In this work, we observe the appearance of a stable $J^{\pi}=
+%								%
+Although other works have already established the possibility |	Although other works have already established the possibility
+resonance has been found within this framework. 		resonance has been found within this framework. 
+%The scattering observables we calculate appear to be natural	%The scattering observables we calculate appear to be natural
+%								%
+To supplement our ab initio calculation, we repeated it using	To supplement our ab initio calculation, we repeated it using
+The result found for the scattering parameter are qualitative	The result found for the scattering parameter are qualitative
+However, the uncertainty of the method is hard to be estimate	However, the uncertainty of the method is hard to be estimate
+Nonetheless, the RGM results appear to be cut-off convergent 	Nonetheless, the RGM results appear to be cut-off convergent 
+%								%
+
+%								%
+The values of the resonance energy and of the scattering para	The values of the resonance energy and of the scattering para
+However one can compare the $S$-matrix resonant poles among d	However one can compare the $S$-matrix resonant poles among d
+%								%
+On the qualitative point of view, the major difference betwee	On the qualitative point of view, the major difference betwee
+However, this is not fundamentally a problem, in part because	However, this is not fundamentally a problem, in part because
+%								%
+
+%								%
+The possibility of creating $P$-wave many-body poles using a  |	The possibility of creating $p$-wave many-body poles using a 
+
+\section*{acknowledgement}					\section*{acknowledgement}
+We thank Bira van Kolck for the patience, discussions, and me	We thank Bira van Kolck for the patience, discussions, and me
+MS was supported by the Pazy Foundation and the Israel Scienc	MS was supported by the Pazy Foundation and the Israel Scienc
+JK acknowledges the hospitality and support of The George Was |	JK acknowledge the support of the Harald and c.o. funding at 
+conversations with H.~W.~Grie\ss hammer and N.~Walet.	      <
+LC an JC supported in part by the National Science Foundation	LC an JC supported in part by the National Science Foundation
+
+
+
+\bibliographystyle{ieeetr}					\bibliographystyle{ieeetr}
+
+%elsarticle-harv}						%elsarticle-harv}
+\bibliography{bibi.bib}						\bibliography{bibi.bib}
+
+\end{document}							\end{document}

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Draft_2.1.aux
+The style file: ieeetr.bst
+Database file #1: bibi.bib
+Warning--I didn't find a database entry for "formartinanyexample"
+Warning--empty journal in Dietz:2021haj
+Warning--empty publisher in Suzuki:1998bn
+Warning--empty booktitle in Hammer:2022lhx
+You've used 44 entries,
+            1876 wiz_defined-function locations,
+            775 strings with 10517 characters,
+and the built_in function-call counts, 13321 in all, are:
+= -- 1376
+> -- 521
+< -- 0
++ -- 190
+- -- 146
+* -- 871
+:= -- 1802
+add.period$ -- 46
+call.type$ -- 44
+change.case$ -- 42
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 771
+empty$ -- 1124
+format.name$ -- 146
+if$ -- 3340
+int.to.chr$ -- 0
+int.to.str$ -- 44
+missing$ -- 46
+newline$ -- 137
+num.names$ -- 44
+pop$ -- 111
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 641
+stack$ -- 0
+substring$ -- 800
+swap$ -- 418
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 117
+width$ -- 46
+write$ -- 447
+(There were 4 warnings)
